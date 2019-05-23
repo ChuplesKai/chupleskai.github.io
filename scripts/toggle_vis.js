@@ -1,0 +1,12 @@
+function showhide(arg) 
+{
+  var x = document.getElementById(arg);
+  if (x.style.display === "none") 
+  {
+    x.style.display = "block";
+  } 
+  else
+  {
+    x.style.display = "none";
+  }
+}

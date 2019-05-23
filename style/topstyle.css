@@ -1,0 +1,255 @@
+/* Overwriting the basic elements */
+html 
+{
+    font-size: 18px; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: Garamond, sans-serif; /* this should be the rest of the output you got from Google fonts */
+    background-color: #0e0e0e;
+    color: #EFEFEF;
+}
+
+body 
+{
+    font-family: Garamond;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 
+{
+    font-size: 28px;
+    margin: 5px;
+    padding: 10px;
+    color: #eaefef; 
+    text-shadow: 1px 1px 0px black;
+}
+
+h2
+{
+    font-size: 26px;
+    margin: 0px;
+    color: #eaefef;
+    padding: 10px;
+    padding-left: 0px;
+    text-shadow: 1px 1px 0px black;
+}
+
+h3
+{
+    font-size: 24px;
+    margin: 0px;
+    color: #eaefef;
+    padding: 10px;
+    padding-left: 0px;
+    text-shadow: 1px 1px 0px black;
+}
+
+h4
+{
+    font-size: 22px;
+    margin: 2px;
+    color: #eaefef;
+    padding: 2px;
+    text-shadow: 1px 1px 0px black;
+}
+
+/* Hyperlink Shenanigans */
+a.headlink
+{
+    color: #eaefef;
+    text-decoration: none;
+}
+
+a.headlink:hover
+{
+    color: #ffffff;
+}
+
+a 
+{
+    color: #a3b8bf;
+    text-decoration: none;
+}
+
+a:hover 
+{
+    color: #ffffff;
+}
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 25px;
+}
+
+div.ac 
+{
+    text-align: center;
+}
+
+div.al
+{
+    text-align: left;
+}
+
+div.ar
+{
+    text-align: right;
+}
+
+/* Self-Defined containers */
+.floathead
+{
+    display: grid;
+    grid-template-columns: 180px 470px 1fr;
+    grid-template-rows: 100%;
+    grid-gap: 1px;
+    position: fixed;
+    height: 110px;
+    width: 100%;
+    padding-top: 0px;
+    padding: 10px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    background-color: #212343;
+    z-index: 1;
+    text-shadow: 2px 2px 0px black;
+}
+
+.fheadleft
+{
+    text-align: center;
+    position: relative;
+    left: 8px;
+}
+
+.fheadmid
+{
+    text-align: center;
+    position: relative;
+    padding: 22px;
+    padding-top: 38px;
+    font-size: 32px;
+}
+
+.fheadright
+{
+    display: flex;
+    position: relative;
+    column-gap: 14px;
+    padding-top: 39px;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 100%;
+    grid-gap: 1px;
+    background-color: #22262e;
+    margin-top: 0px;
+    top: 0px;
+    padding: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pub
+{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.skill
+{
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: 100%;
+    grid-gap: 15px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.sidebar
+{
+    position:fixed;
+    padding-top: 50px;
+    padding: 20px;
+    padding-left: 40px;
+    top: 235px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.stickybar
+{
+    position: sticky;
+    top: 130px;
+    background-color: #22262e;
+    width: 100% - 20px;
+    padding: 0px;
+    padding-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.sbgrid
+{
+    display: grid;
+    grid-template-columns: 65% 18% 17%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.sbgtoppad
+{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+}
+
+.bodytext
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main
+{
+    width: 100% - 90px;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    z-index:0;
+    /*Dark Theme*/
+    background-color: #404450;
+    color: #fffafa;
+    /*Light Theme*/
+    /*background-color: #e9eff4;*/
+    /*color: #060600;*/
+    margin: 0px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+footer 
+{
+    font-family: "arial", sans-serif;
+    font-size: 11pt;
+    /*position: relative;*/
+    z-index: 1;
+    width: 100%; 
+    height: 60px;
+    background-color: #212343; 
+    color: #c3ceef;
+    text-align: center; 
+    text-decoration: none; 
+    margin: 0px;
+    padding-top: 10px;
+}
