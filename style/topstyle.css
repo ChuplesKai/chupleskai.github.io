@@ -53,6 +53,15 @@ h4
     text-shadow: 1px 1px 0px black;
 }
 
+h6
+{
+    font-size: 16px;
+    margin: 0px;
+    color: #eaefef;
+    padding: 0px;
+    text-shadow: 1px 1px 0px black;
+}
+
 /* Hyperlink Shenanigans */
 a.headlink
 {
